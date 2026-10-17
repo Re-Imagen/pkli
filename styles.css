@@ -125,10 +125,15 @@ button:focus-visible, a:focus-visible, input:focus-visible + .custom-check { out
 .brand-word > span { color: var(--lime); }
 .brand-word small { display: block; margin-top: 4px; color: var(--muted); font-family: var(--font-mono); font-size: 8px; font-weight: 400; letter-spacing: .085em; text-transform: uppercase; }
 .primary-nav { display: flex; align-items: center; gap: clamp(20px, 3.1vw, 42px); }
-.primary-nav > a { position: relative; color: var(--muted); font-size: 13px; font-weight: 600; text-decoration: none; transition: color .2s ease; }
-.primary-nav > a::after { position: absolute; right: 0; bottom: -7px; left: 0; height: 1px; content: ''; background: var(--lime); transform: scaleX(0); transform-origin: right; transition: transform .24s ease; }
-.primary-nav > a:hover, .primary-nav > a.is-current { color: var(--ink); }
-.primary-nav > a:hover::after, .primary-nav > a.is-current::after { transform: scaleX(1); transform-origin: left; }
+/* Tautan bagian hanya muncul saat RuangAkar dibuka dari kartu IPS di halaman Konten. */
+.nav-section-links { display: none; align-items: center; gap: clamp(20px, 3.1vw, 42px); }
+html.dari-ips .nav-section-links { display: flex; }
+.primary-nav > a, .nav-section-links > a { position: relative; color: var(--muted); font-size: 13px; font-weight: 600; text-decoration: none; transition: color .2s ease; }
+.primary-nav > a::after, .nav-section-links > a::after { position: absolute; right: 0; bottom: -7px; left: 0; height: 1px; content: ''; background: var(--lime); transform: scaleX(0); transform-origin: right; transition: transform .24s ease; }
+.primary-nav > a:hover, .primary-nav > a.is-current,
+.nav-section-links > a:hover, .nav-section-links > a.is-current { color: var(--ink); }
+.primary-nav > a:hover::after, .primary-nav > a.is-current::after,
+.nav-section-links > a:hover::after, .nav-section-links > a.is-current::after { transform: scaleX(1); transform-origin: left; }
 .theme-toggle {
   min-height: 40px;
   display: inline-flex;
@@ -468,9 +473,10 @@ button:focus-visible, a:focus-visible, input:focus-visible + .custom-check { out
   .mobile-menu-toggle[aria-expanded="true"] .icon-close { display: block; }
   .primary-nav { position: absolute; top: calc(100% + 7px); right: 17px; left: 17px; display: flex; align-items: stretch; flex-direction: column; gap: 0; padding: 9px; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 14px; box-shadow: 0 18px 45px rgba(0,0,0,.25); opacity: 0; visibility: hidden; transform: translateY(-7px) scale(.98); transform-origin: top; transition: opacity .2s ease, transform .2s ease, visibility .2s; }
   .primary-nav.is-open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
-  .primary-nav > a { padding: 12px 13px; border-bottom: 1px solid var(--line); font-size: 13px; }
-  .primary-nav > a::after { display: none; }
-  .primary-nav > a:last-of-type { border-bottom: 0; }
+  .nav-section-links { width: 100%; align-items: stretch; flex-direction: column; gap: 0; }
+  .primary-nav > a, .nav-section-links > a { padding: 12px 13px; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .primary-nav > a::after, .nav-section-links > a::after { display: none; }
+  .primary-nav > a:last-of-type, .nav-section-links > a:last-child { border-bottom: 0; }
   .theme-toggle { min-height: 43px; justify-content: flex-start; margin-top: 7px; padding-inline: 13px; border-color: transparent; background: rgba(217,251,121,.055); }
 }
 
