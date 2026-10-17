@@ -1,6 +1,15 @@
 # RuangAkar
 
-Situs edukasi satu halaman tentang pelestarian kearifan lokal Indonesia di tengah modernisasi dan globalisasi. Dibangun sebagai situs statis tanpa framework atau dependensi runtime.
+Situs edukasi tentang pelestarian kearifan lokal Indonesia di tengah modernisasi dan globalisasi. Dibangun sebagai situs statis tanpa framework atau dependensi runtime.
+
+## Halaman
+
+| Berkas | Isi |
+| --- | --- |
+| `index.html` | Beranda RuangAkar: gagasan, empat cerita, jembatan, dan aksi pelestarian. |
+| `content.html` | Halaman **Konten** dengan dua bagian: **IPS** (menuju RuangAkar) dan **TIK** (menuju halaman placeholder). |
+| `about.html` | Halaman **Tentang**: foto pembuat berbentuk bulat, cerita di balik situs, dan ikon sosial media. |
+| `tik.html` | Halaman placeholder untuk ruang **TIK**. |
 
 ## Menjalankan secara lokal
 
@@ -10,12 +19,39 @@ python3 -m http.server 4173
 
 Lalu buka `http://localhost:4173`.
 
+## Mengubah tautan sosial media (untuk pemula)
+
+Semua tautan ikon sosial media di halaman **Tentang** diatur di satu berkas: **`tautan.js`**.
+
+1. Buka berkas `tautan.js` dengan editor teks apa pun (Notepad, VS Code, atau editor di GitHub).
+2. Cari baris aplikasi yang ingin diganti, misalnya:
+
+   ```js
+   instagram: "https://www.instagram.com/",
+   ```
+
+3. Ganti alamat di antara tanda kutip dengan alamat profilmu, misalnya:
+
+   ```js
+   instagram: "https://www.instagram.com/namakamu",
+   ```
+
+4. Jangan hapus tanda kutip, titik dua, dan koma di akhir baris.
+5. Simpan berkas. Ikon Instagram di halaman Tentang otomatis membuka alamat baru.
+
+Nilai bawaan saat ini adalah tautan **placeholder** (halaman utama masing-masing aplikasi), jadi situs tetap berfungsi sebelum tautan asli dipasang. Jika JavaScript dimatikan, tautan cadangan di `about.html` tetap bisa dipakai, tetapi untuk menggantinya disarankan tetap melalui `tautan.js`.
+
+## Mengganti isi halaman TIK
+
+Halaman TIK saat ini adalah placeholder di `tik.html`. Tautan **TIK** di `content.html` sudah mengarah ke berkas itu, jadi isi halaman bisa diganti kapan saja tanpa mengubah tautan.
+
 ## Fitur
 
-- Tampilan dark mode sebagai tema awal, dengan opsi tema terang.
+- Tampilan dark mode sebagai tema awal, dengan opsi tema terang yang tersimpan di browser.
 - Layout responsif, navigasi mobile, dan dukungan reduced motion.
 - Kartu cerita Subak, Noken, Angklung, dan Pantun dengan filter tema.
 - Checklist aksi pelestarian yang menyimpan progres secara lokal di browser.
+- Halaman Tentang dengan potret bulat dan ikon sosial media yang tersusun santai.
 - Animasi reveal, elemen 3D halus, dan tautan rujukan ke UNESCO.
 
 ## Rujukan utama
@@ -26,4 +62,4 @@ Lalu buka `http://localhost:4173`.
 - [UNESCO — Noken](https://ich.unesco.org/en/USL/noken-multifunctional-knotted-or-woven-bag-handcraft-of-the-people-of-papua-00619)
 - [UNESCO — Pantun](https://ich.unesco.org/en/RL/pantun-02274)
 
-Visual utama dibuat khusus untuk proyek ini. Beberapa ilustrasi cerita dibuat sebagai SVG inline.
+Visual utama dibuat khusus untuk proyek ini. Beberapa ilustrasi cerita dibuat sebagai SVG inline. Foto pada halaman Tentang berasal dari gambar yang dikirim pembuat situs.

@@ -172,6 +172,19 @@
     });
   }
 
+  // Tautan sosial media diatur di file tautan.js agar mudah diganti.
+  const socialLinks = window.TAUTAN_SITUS || {};
+  document.querySelectorAll('[data-tautan]').forEach((link) => {
+    const url = socialLinks[link.dataset.tautan];
+    if (typeof url !== 'string' || !url.trim()) return;
+    const cleanUrl = url.trim();
+    link.href = cleanUrl;
+    if (!cleanUrl.startsWith('mailto:')) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+  });
+
   const navLinks = [...document.querySelectorAll('.primary-nav a[href^="#"]')];
   const navSections = navLinks
     .map((link) => document.querySelector(link.getAttribute('href')))
