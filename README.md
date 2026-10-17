@@ -41,6 +41,16 @@ Semua tautan ikon sosial media di halaman **Tentang** diatur di satu berkas: **`
 
 Nilai bawaan saat ini adalah tautan **placeholder** (halaman utama masing-masing aplikasi), jadi situs tetap berfungsi sebelum tautan asli dipasang. Jika JavaScript dimatikan, tautan cadangan di `about.html` tetap bisa dipakai, tetapi untuk menggantinya disarankan tetap melalui `tautan.js`.
 
+## Navigasi RuangAkar
+
+Tautan bagian **Gagasan**, **Cerita**, dan **Jembatan** tidak ditampilkan pada navigasi utama secara default. Ketiganya hanya muncul ketika RuangAkar dibuka lewat kartu **IPS** di halaman **Konten**, yaitu melalui alamat:
+
+```text
+index.html?dari=ips
+```
+
+Parameter `dari=ips` dibaca oleh skrip kecil di `<head>` `index.html` dan menambahkan kelas `dari-ips` pada elemen `<html>`. Tanpa parameter itu (misalnya saat membuka `index.html` langsung atau lewat logo), navigasi hanya menampilkan **Konten** dan **Tentang**.
+
 ## Mengganti isi halaman TIK
 
 Halaman TIK saat ini adalah placeholder di `tik.html`. Tautan **TIK** di `content.html` sudah mengarah ke berkas itu, jadi isi halaman bisa diganti kapan saja tanpa mengubah tautan.
