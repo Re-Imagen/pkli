@@ -7,16 +7,25 @@
   <meta name="description" content="RuangAkar mengajak kita mengenal dan merawat kearifan lokal Indonesia sebagai pengetahuan hidup di tengah modernisasi dan globalisasi.">
   <title>RuangAkar — Pengetahuan lama, masa depan bersama</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231b241e'/%3E%3Cpath d='M32 10c12 9 17 18 0 43C15 28 20 19 32 10Z' fill='%23d9fb79'/%3E%3Cpath d='M32 51V25m0 11c-6-5-10-6-15-5m15 1c5-5 10-7 15-7' fill='none' stroke='%23101411' stroke-width='2.7' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
   <script>
     // Tautan bagian (Gagasan/Cerita/Jembatan) hanya tampil bila RuangAkar
-    // dibuka lewat kartu IPS di halaman Konten.
-    document.documentElement.classList.add('has-js');
-    if (new URLSearchParams(window.location.search).get('dari') === 'ips') {
-      document.documentElement.classList.add('dari-ips');
-    }
+    // dibuka lewat kartu IPS di halaman Konten, yaitu index.html?dari=ips.
+    // Atribut `hidden` pada wadah tautan membuatnya tetap tersembunyi walau
+    // CSS gagal dimuat atau masih tersimpan versi lama di cache browser.
+    (function () {
+      document.documentElement.classList.add('has-js');
+      var dari = new URLSearchParams(window.location.search).get('dari');
+      if (dari && dari.trim().toLowerCase() === 'ips') {
+        document.documentElement.classList.add('dari-ips');
+        document.addEventListener('DOMContentLoaded', function () {
+          var grup = document.getElementById('nav-section-links');
+          if (grup) grup.removeAttribute('hidden');
+        });
+      }
+    })();
   </script>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#konten">Lewati ke konten utama</a>
@@ -39,7 +48,7 @@
       </button>
 
       <nav class="primary-nav" id="primary-nav" aria-label="Navigasi utama">
-        <div class="nav-section-links" id="nav-section-links">
+        <div class="nav-section-links" id="nav-section-links" hidden>
           <a href="#gagasan">Gagasan</a>
           <a href="#warisan">Cerita</a>
           <a href="#jembatan">Jembatan</a>

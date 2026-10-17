@@ -49,7 +49,15 @@ Tautan bagian **Gagasan**, **Cerita**, dan **Jembatan** tidak ditampilkan pada n
 index.html?dari=ips
 ```
 
-Parameter `dari=ips` dibaca oleh skrip kecil di `<head>` `index.html` dan menambahkan kelas `dari-ips` pada elemen `<html>`. Tanpa parameter itu (misalnya saat membuka `index.html` langsung atau lewat logo), navigasi hanya menampilkan **Konten** dan **Tentang**.
+Parameter `dari=ips` dibaca oleh skrip kecil di `<head>` `index.html` (tidak peka huruf besar/kecil) dan menambahkan kelas `dari-ips` pada elemen `<html>`. Tanpa parameter itu — misalnya saat membuka `index.html` langsung, lewat logo, atau setelah berpindah dari halaman lain — navigasi hanya menampilkan **Konten** dan **Tentang**.
+
+Agar tidak mudah rusak, wadah tautan memakai atribut `hidden` di HTML:
+
+- Bila berkas CSS gagal dimuat atau browser masih memakai `styles.css` versi lama (tanpa aturan penyembunyi), tautan tetap tidak muncul karena `hidden` adalah perilaku bawaan browser.
+- Skrip hanya melepas `hidden` ketika parameter `dari=ips` benar-benar ada, sehingga tidak ada kedipan menu.
+- Rujukan `styles.css`, `pages.css`, `script.js`, dan `tautan.js` memakai penanda versi (`?v=2`). Jika tampilan atau skrip diubah lagi, naikkan angka versi tersebut agar browser pengunjung mengambil berkas terbaru, bukan versi lama dari cache.
+
+Catatan: bila JavaScript dimatikan sepenuhnya, tautan bagian tidak ditampilkan sama sekali — termasuk saat masuk lewat IPS — karena kondisi `dari=ips` hanya bisa dibaca lewat JavaScript pada situs statis ini.
 
 ## Mengganti isi halaman TIK
 
