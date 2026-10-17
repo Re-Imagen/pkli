@@ -420,6 +420,8 @@ button:focus-visible, a:focus-visible, input:focus-visible + .custom-check { out
 .creator-credit { min-height: 56px; display: grid; place-items: center; padding-top: 14px; padding-bottom: 14px; border-top: 1px solid rgba(235,241,230,.1); text-align: center; }
 .creator-credit p { margin: 0; }
 .creator-credit strong { color: var(--hero-accent); font-size: 11px; font-weight: 700; letter-spacing: .02em; line-height: 1.6; }
+.credit-link { display: inline-block; margin-left: 9px; padding-bottom: 2px; color: var(--hero-accent); border-bottom: 1px solid rgba(217, 251, 121, .33); font-family: var(--font-mono); font-size: 8px; letter-spacing: .05em; text-decoration: none; white-space: nowrap; transition: color .2s ease, border-color .2s ease; }
+.credit-link:hover { color: #f4f4e9; border-color: #f4f4e9; }
 .back-top { display: inline-flex; align-items: center; gap: 12px; color: #d1d8cb; font-size: 10px; text-decoration: none; }
 .back-top span { width: 29px; height: 29px; display: grid; place-items: center; color: var(--lime); border: 1px solid rgba(217,251,121,.3); border-radius: 50%; transition: background .2s ease, color .2s ease, transform .2s ease; }
 .back-top:hover span { color: #152017; background: var(--button-bg); transform: translateY(-2px); }
@@ -455,6 +457,21 @@ button:focus-visible, a:focus-visible, input:focus-visible + .custom-check { out
   .principle-card + .principle-card { padding-left: 14px; }
   .action-layout { grid-template-columns: minmax(0,1.15fr) minmax(280px,.85fr); }
   .checklist-card { padding-inline: 22px; }
+}
+
+/* Header with five links needs a dropdown earlier than 760px so it never collides with the brand. */
+@media (max-width: 900px) {
+  .mobile-menu-toggle { width: 42px; height: 42px; display: grid; place-items: center; margin-left: auto; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 11px; cursor: pointer; }
+  .mobile-menu-toggle .icon { width: 19px; height: 19px; }
+  .mobile-menu-toggle .icon-close { display: none; }
+  .mobile-menu-toggle[aria-expanded="true"] .icon-menu { display: none; }
+  .mobile-menu-toggle[aria-expanded="true"] .icon-close { display: block; }
+  .primary-nav { position: absolute; top: calc(100% + 7px); right: 17px; left: 17px; display: flex; align-items: stretch; flex-direction: column; gap: 0; padding: 9px; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 14px; box-shadow: 0 18px 45px rgba(0,0,0,.25); opacity: 0; visibility: hidden; transform: translateY(-7px) scale(.98); transform-origin: top; transition: opacity .2s ease, transform .2s ease, visibility .2s; }
+  .primary-nav.is-open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+  .primary-nav > a { padding: 12px 13px; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .primary-nav > a::after { display: none; }
+  .primary-nav > a:last-of-type { border-bottom: 0; }
+  .theme-toggle { min-height: 43px; justify-content: flex-start; margin-top: 7px; padding-inline: 13px; border-color: transparent; background: rgba(217,251,121,.055); }
 }
 
 @media (max-width: 760px) {
@@ -582,15 +599,4 @@ button:focus-visible, a:focus-visible, input:focus-visible + .custom-check { out
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .has-js [data-reveal] { opacity: 1; transform: none; }
-}
-}
-}
-tant; }
-  .has-js [data-reveal] { opacity: 1; transform: none; }
-}
-}
-}
- .has-js [data-reveal] { opacity: 1; transform: none; }
-}
-}
 }
