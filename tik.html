@@ -4,19 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101411">
-  <meta name="description" content="Halaman TIK RuangAkar masih berupa placeholder. Kembali ke halaman Konten untuk menjelajah ruang lainnya.">
-  <title>TIK — Halaman Placeholder — RuangAkar</title>
+  <meta name="description" content="Belajar Teknologi Informasi dan Komunikasi di RuangAkar: 12 bab tentang komputer, internet, data, pemrograman, keamanan digital, dan AI, dengan praktik, glosarium, serta kuis.">
+  <title>TIK — Teknologi Informasi dan Komunikasi — RuangAkar</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231b241e'/%3E%3Cpath d='M32 10c12 9 17 18 0 43C15 28 20 19 32 10Z' fill='%23d9fb79'/%3E%3Cpath d='M32 51V25m0 11c-6-5-10-6-15-5m15 1c5-5 10-7 15-7' fill='none' stroke='%23101411' stroke-width='2.7' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css?v=2">
-  <link rel="stylesheet" href="pages.css?v=2">
+  <link rel="stylesheet" href="pages.css?v=3">
+  <link rel="stylesheet" href="tik.css?v=1">
   <script>document.documentElement.classList.add('has-js');</script>
   <script src="tautan.js?v=2" defer></script>
-  <script src="script.js?v=2" defer></script>
+  <script src="script.js?v=3" defer></script>
+  <script src="tik.js?v=1" defer></script>
 </head>
-<body class="page-placeholder">
+<body class="page-tik" id="atas">
   <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
-  <header class="site-header" id="atas">
+  <header class="site-header">
     <div class="nav-shell">
       <a class="brand" href="index.html" aria-label="RuangAkar, kembali ke beranda">
         <span class="brand-mark" aria-hidden="true">
@@ -34,7 +36,7 @@
       </button>
 
       <nav class="primary-nav" id="primary-nav" aria-label="Navigasi utama">
-        <a href="content.html" class="is-current" aria-current="page">Konten</a>
+        <a href="content.html" class="is-current">Konten</a>
         <a href="about.html">Tentang</a>
         <button class="theme-toggle" type="button" aria-label="Ganti ke mode terang" title="Ganti tema">
           <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
@@ -45,53 +47,408 @@
     </div>
   </header>
 
-  <main id="konten" class="page-main placeholder-page">
-    <section class="placeholder-stage section" aria-labelledby="tik-title">
-      <div class="placeholder-card" data-reveal>
-        <div class="placeholder-top">
-          <p class="section-kicker"><span class="kicker-number">02</span><span>RUANG TIK</span></p>
-          <span class="placeholder-badge"><span class="live-dot" aria-hidden="true"></span>Placeholder</span>
-        </div>
+  <main id="konten" class="tik-page">
+    <nav class="tik-breadcrumb section" aria-label="Jejak navigasi">
+      <a href="content.html">Konten</a><span aria-hidden="true">/</span><span aria-current="page">Teknologi Informasi dan Komunikasi</span>
+    </nav>
 
-        <div class="placeholder-visual" aria-hidden="true">
-          <span class="ph-pixel ph-pixel-a"></span>
-          <span class="ph-pixel ph-pixel-b"></span>
-          <span class="ph-pixel ph-pixel-c"></span>
-          <span class="ph-pixel ph-pixel-d"></span>
-          <div class="ph-monitor">
-            <span class="ph-bar"><i></i><i></i><i></i></span>
-            <span class="ph-screen">
-              <svg viewBox="0 0 90 46" fill="none">
-                <path d="m31 14-9 9 9 9m28-18 9 9-9 9M53 9 39 37" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span class="ph-cursor"></span>
-            </span>
-            <span class="ph-stand"></span>
-          </div>
-          <span class="ph-shadow"></span>
+    <section class="tik-hero section" aria-labelledby="tik-title">
+      <div class="tik-hero-copy">
+        <p class="section-kicker"><span class="kicker-number">02</span><span>RUANG TIK · BELAJAR UNTUK BERDAYA</span></p>
+        <h1 id="tik-title">Melek teknologi,<br><em>lebih berdaya.</em></h1>
+        <p class="tik-hero-lead"><strong>Teknologi Informasi dan Komunikasi</strong> bukan cuma soal memakai gawai. Ini tentang memahami cara kerjanya, mengolah informasi, dan menciptakan sesuatu dengan aman serta bertanggung jawab.</p>
+        <div class="tik-hero-actions">
+          <a class="button button-primary" href="#materi">Mulai belajar <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="text-link" href="#praktik">Langsung praktik <span aria-hidden="true">↗</span></a>
         </div>
-
-        <h1 id="tik-title">TIK<span class="placeholder-cursor" aria-hidden="true">_</span></h1>
-        <p class="placeholder-lede">Halaman ini belum punya isi. Ia sengaja disiapkan sebagai <b>placeholder</b> supaya tautan TIK di halaman Konten sudah bisa diketuk dan diuji.</p>
-
-        <div class="placeholder-actions">
-          <a class="button button-primary" href="content.html">Kembali ke Konten <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6"/></svg></a>
-          <a class="text-link" href="index.html#warisan">Buka RuangAkar <span aria-hidden="true">↗</span></a>
-        </div>
-
-        <div class="placeholder-status">
-          <span class="placeholder-status-label">STATUS</span>
-          <span>Sedang disiapkan</span>
-          <span class="placeholder-progress" aria-hidden="true"><i></i></span>
-        </div>
+        <p class="tik-hero-note"><span class="live-dot" aria-hidden="true"></span>Dari dasar · Belajar mandiri · Tanpa akun</p>
       </div>
 
-      <div class="placeholder-meta" data-reveal>
-        <span>HALAMAN INI BISA DIGANTI NANTI</span>
-        <span aria-hidden="true">✳</span>
-        <span>ALAMATNYA TETAP <code>tik.html</code></span>
+      <figure class="tik-visual">
+        <div class="tik-window" aria-hidden="true">
+          <div class="tik-window-bar"><span class="tik-window-dots"><i></i><i></i><i></i></span><span>ruangbelajar / sesi-01</span><span>⌘</span></div>
+          <div class="tik-circuit">
+            <svg viewBox="0 0 420 274" fill="none">
+              <defs><pattern id="tik-grid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="currentColor" opacity=".16"/></pattern></defs>
+              <rect width="420" height="274" fill="url(#tik-grid)"/>
+              <circle cx="210" cy="136" r="106" stroke="currentColor" opacity=".1"/>
+              <circle cx="210" cy="136" r="84" stroke="currentColor" stroke-dasharray="3 7" opacity=".3"/>
+              <g stroke="currentColor" stroke-width="1.5" opacity=".6"><path d="M160 112h-40V66H58m202 48h37V62h64M160 158h-45v53H58m202-53h42v52h59M210 86V30m0 156v56"/></g>
+              <g fill="currentColor"><circle cx="58" cy="66" r="4"/><circle cx="361" cy="62" r="4"/><circle cx="58" cy="211" r="4"/><circle cx="361" cy="210" r="4"/><circle cx="210" cy="30" r="3"/><circle cx="210" cy="242" r="3"/></g>
+              <rect x="153" y="79" width="114" height="114" rx="27" fill="currentColor" opacity=".05"/>
+              <rect x="160" y="86" width="100" height="100" rx="22" stroke="currentColor" opacity=".65"/>
+              <path d="m195 120-17 16 17 16m30-32 17 16-17 16m-10-40-10 48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="tik-node tik-node-one">01 <b>data</b></span>
+            <span class="tik-node tik-node-two">02 <b>logika</b></span>
+            <span class="tik-node tik-node-three">03 <b>koneksi</b></span>
+            <span class="tik-node tik-node-four">04 <b>karya</b></span>
+          </div>
+          <div class="tik-terminal"><span>&gt;</span> rasa_ingin_tahu = <b>True</b><i></i></div>
+        </div>
+        <figcaption><span aria-hidden="true">✳</span> Bukan sekadar pengguna. Jadilah pencipta.</figcaption>
+      </figure>
+
+      <dl class="tik-hero-stats">
+        <div><dt>Bab pembelajaran</dt><dd>12<span> / dari dasar ke masa depan</span></dd></div>
+        <div><dt>Proyek praktik</dt><dd>04<span> / belajar sambil mencoba</span></dd></div>
+        <div><dt>Soal pemahaman</dt><dd>10<span> / lengkap dengan pembahasan</span></dd></div>
+      </dl>
+    </section>
+
+    <section class="tik-intro section" aria-labelledby="tik-intro-title">
+      <div>
+        <p class="tik-eyebrow">KENALI DULU, BARU JELAJAHI</p>
+        <h2 id="tik-intro-title">Satu bidang.<br><em>Banyak kemungkinan.</em></h2>
+      </div>
+      <div class="tik-intro-copy">
+        <p><strong>TIK</strong> mencakup teknologi untuk memperoleh, mengolah, menyimpan, dan menyampaikan informasi. Komputer, ponsel, jaringan, aplikasi, hingga radio adalah bagian dari cerita besarnya.</p>
+        <p>Ruang ini adalah peta pengantar, bukan seluruh ilmu TIK atau pengganti buku sekolah. Mulai dari bab pertama, atau cari topik yang sedang kamu butuhkan. Tidak perlu menguasai semuanya sekaligus.</p>
+        <div class="tik-learning-goals"><span>Pahami konsep</span><span>Latih keterampilan</span><span>Bangun sikap bijak</span></div>
       </div>
     </section>
+
+    <div class="tik-learning-layout section">
+      <aside class="tik-sidebar" aria-label="Panduan belajar TIK">
+        <div class="tik-sidebar-inner">
+          <p class="tik-eyebrow">PETA BELAJARMU</p>
+          <nav class="tik-study-nav" aria-label="Daftar isi TIK">
+            <a href="#materi"><span>01</span> Jelajahi materi <span aria-hidden="true">↗</span></a>
+            <a href="#praktik"><span>02</span> Coba praktik <span aria-hidden="true">↗</span></a>
+            <a href="#kuis"><span>03</span> Uji pemahaman <span aria-hidden="true">↗</span></a>
+            <a href="#glosarium"><span>04</span> Kamus kecil <span aria-hidden="true">↗</span></a>
+            <a href="#rujukan"><span>05</span> Baca lebih jauh <span aria-hidden="true">↗</span></a>
+          </nav>
+          <div class="tik-progress-card" data-tik-interactive hidden>
+            <span class="tik-eyebrow">LANGKAH KECILMU</span>
+            <p id="tik-progress-count" role="status" aria-live="polite"><strong>0</strong> / 12 bab dipahami</p>
+            <progress id="tik-progress" max="12" value="0" aria-label="Progres bab yang dipahami">0 dari 12 bab</progress>
+            <a id="tik-continue" href="#bab-01">Mulai dari bab 01 <span aria-hidden="true">→</span></a>
+            <p id="tik-storage-note">Tandai bab yang sudah dipahami. Progres tersimpan hanya di browser ini, bukan di akun.</p>
+          </div>
+          <p class="tik-sidebar-note">Pelan-pelan juga sampai.<br>Yang penting, terus ingin tahu.</p>
+        </div>
+      </aside>
+
+      <div class="tik-learning-content">
+        <section class="tik-block" id="materi" aria-labelledby="materi-title">
+          <div class="tik-section-heading">
+            <p class="section-kicker"><span class="kicker-number">01</span><span>BEKAL PENGETAHUAN</span></p>
+            <h2 id="materi-title">Dari mengenal,<br><em>menjadi mengerti.</em></h2>
+            <p>Dua belas bab yang saling terhubung. Buka judul untuk membaca konsep, contoh, dan latihan kecilnya.</p>
+          </div>
+
+          <div class="tik-material-tools" data-tik-interactive hidden>
+            <label class="tik-search-label" for="tik-search">Cari di dalam materi</label>
+            <div class="tik-search-box">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+              <input id="tik-search" type="search" placeholder="Coba: internet, spreadsheet, atau AI…" autocomplete="off" aria-controls="tik-modules">
+            </div>
+            <div class="tik-filters" role="group" aria-label="Filter kelompok materi">
+              <button type="button" data-tik-filter="all" aria-pressed="true">Semua</button>
+              <button type="button" data-tik-filter="fondasi" aria-pressed="false">Fondasi</button>
+              <button type="button" data-tik-filter="koneksi" aria-pressed="false">Koneksi</button>
+              <button type="button" data-tik-filter="karya" aria-pressed="false">Berkarya</button>
+              <button type="button" data-tik-filter="aman" aria-pressed="false">Digital bijak</button>
+              <button type="button" data-tik-filter="masa-depan" aria-pressed="false">Masa depan</button>
+            </div>
+            <div class="tik-search-meta"><p id="tik-material-count" role="status" aria-live="polite">12 dari 12 bab</p><button class="tik-plain-button" id="tik-reset-filter" type="button" hidden>Hapus pencarian &amp; filter</button></div>
+          </div>
+          <noscript><p class="tik-callout">Semua materi tetap bisa dibaca. Aktifkan JavaScript untuk pencarian, penyimpanan progres, dan penilaian kuis.</p></noscript>
+          <div class="tik-empty" id="tik-material-empty" hidden><span aria-hidden="true">⌕</span><h3>Topiknya belum ditemukan.</h3><p>Coba kata yang lebih singkat, kelompok lain, atau hapus pencarian dan filter di atas.</p></div>
+
+          <div class="tik-modules" id="tik-modules">
+            <details class="tik-module" id="bab-01" data-category="fondasi" data-keywords="pengertian sejarah ict informasi analog digital teknologi komunikasi informatika" open>
+              <summary><span class="tik-module-number">01</span><span class="tik-module-heading"><span class="tik-module-category">FONDASI</span><span class="tik-module-title" role="heading" aria-level="3">Mengenal TIK &amp; dunia digital</span><span class="tik-module-description">Pengertian, perkembangan, dan perbedaan data dengan informasi.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> menjelaskan peran TIK dan bagaimana data menjadi informasi yang berguna.</p>
+                <p><strong>Teknologi informasi</strong> membantu mengolah dan menyimpan data. <strong>Teknologi komunikasi</strong> membantu menyampaikan pesan antarpihak. Keduanya bertemu ketika kamu mengirim dokumen, mengikuti kelas daring, atau membuat peta digital.</p>
+                <div class="tik-concept-grid">
+                  <div><h4>Data</h4><p>Catatan berupa angka, teks, gambar, suara, atau hasil pengamatan. Contoh: suhu kelas selama tiga hari adalah 28, 29, dan 30 °C.</p></div>
+                  <div><h4>Informasi</h4><p>Data yang diberi konteks dan diolah agar bermakna. Dari catatan tadi, suhu rata-rata kelas adalah 29 °C dan naik setiap hari.</p></div>
+                </div>
+                <h4>Analog, digital, dan perkembangan teknologi</h4>
+                <p>Sinyal analog berubah secara kontinu; data digital direpresentasikan dengan nilai diskret, umumnya bit 0 dan 1. Mikrofon dapat menangkap suara analog, lalu perangkat mengubahnya menjadi data digital untuk direkam dan dikirim.</p>
+                <ol class="tik-timeline"><li><b>Komunikasi jarak jauh:</b> telegraf, telepon, radio, dan televisi memperluas penyampaian pesan.</li><li><b>Komputasi elektronik:</b> transistor, sirkuit terpadu, dan mikroprosesor memungkinkan komputer makin kecil dan terjangkau.</li><li><b>Jaringan global:</b> internet menghubungkan jaringan; World Wide Web memudahkan akses halaman yang saling bertaut.</li><li><b>Era terkoneksi:</b> ponsel pintar, cloud, sensor, dan AI membuat pengolahan informasi semakin tersebar.</li></ol>
+                <p><strong>TIK dan informatika beririsan, tetapi tidak identik.</strong> TIK menekankan pemanfaatan teknologi informasi dan komunikasi. Informatika juga mempelajari prinsip komputasi, algoritma, data, serta perancangan sistem. Pembagian materi di sekolah dapat berbeda.</p>
+                <div class="tik-callout"><b>Coba pikirkan:</b> foto struk belanja adalah data. Total pengeluaran bulanan yang dihitung dari banyak struk adalah informasi. Keputusan mengurangi pengeluaran adalah langkah berikutnya.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-01"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-02" data-category="fondasi" data-keywords="hardware software brainware cpu ram rom gpu ssd hdd sistem operasi file folder biner bit byte kib mib perangkat keras lunak troubleshooting">
+              <summary><span class="tik-module-number">02</span><span class="tik-module-heading"><span class="tik-module-category">FONDASI</span><span class="tik-module-title" role="heading" aria-level="3">Komputer &amp; cara kerjanya</span><span class="tik-module-description">Perangkat keras, perangkat lunak, penyimpanan, dan pengelolaan berkas.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> mengenali bagian komputer dan mengelola berkas dengan tertib.</p>
+                <p>Sistem komputer melibatkan <strong>hardware</strong> (perangkat fisik), <strong>software</strong> (instruksi atau program), dan manusia yang menggunakannya, yang sering disebut <strong>brainware</strong> dalam materi pengantar.</p>
+                <ol class="tik-flow"><li><b>Input</b><span>Keyboard, kamera, sensor</span></li><li><b>Proses</b><span>CPU menjalankan instruksi</span></li><li><b>Output</b><span>Layar, printer, pengeras suara</span></li><li><b>Penyimpanan</b><span>Berkas disimpan untuk dipakai lagi</span></li></ol>
+                <div class="tik-table-wrap" role="region" aria-label="Perbandingan komponen komputer" tabindex="0"><table><caption>Kenali komponen utamanya</caption><thead><tr><th scope="col">Komponen</th><th scope="col">Fungsi</th><th scope="col">Yang perlu diingat</th></tr></thead><tbody><tr><th scope="row">CPU</th><td>Menjalankan instruksi dan mengendalikan banyak proses.</td><td>Performa tidak ditentukan kecepatan clock saja.</td></tr><tr><th scope="row">RAM</th><td>Menampung data kerja yang sedang dipakai.</td><td>Umumnya kehilangan isinya ketika daya mati.</td></tr><tr><th scope="row">SSD / HDD</th><td>Menyimpan sistem, aplikasi, dan berkas.</td><td>Data tetap tersimpan tanpa daya; tetap perlu cadangan.</td></tr><tr><th scope="row">GPU</th><td>Memproses grafis dan komputasi paralel tertentu.</td><td>Bisa terintegrasi atau berupa kartu terpisah.</td></tr><tr><th scope="row">ROM / flash firmware</th><td>Menyimpan instruksi dasar perangkat.</td><td>Firmware modern sering dapat diperbarui.</td></tr></tbody></table></div>
+                <h4>Sistem operasi dan aplikasi</h4>
+                <p>Windows, macOS, GNU/Linux, Android, dan iOS adalah contoh sistem operasi: pengelola perangkat, memori, berkas, dan akses pengguna. Browser, pengolah kata, serta editor gambar adalah aplikasi. Driver membantu sistem berkomunikasi dengan perangkat tertentu.</p>
+                <h4>Bit, byte, dan nama berkas</h4>
+                <ul><li><strong>1 byte = 8 bit.</strong> Dalam satuan desimal, 1 kB = 1.000 byte dan 1 MB = 1.000.000 byte. Dalam satuan biner, 1 KiB = 1.024 byte dan 1 MiB = 1.048.576 byte. Label pada perangkat lunak kadang berbeda.</li><li><strong>Format berkas:</strong> <code>.txt</code> untuk teks biasa, <code>.pdf</code> untuk dokumen, <code>.jpg</code>/<code>.png</code> untuk gambar, <code>.mp3</code> untuk audio, dan <code>.csv</code> untuk data tabular. Mengganti ekstensi tidak otomatis mengonversi isi berkas.</li><li><strong>Folder yang jelas:</strong> gunakan struktur seperti <code>Tugas/TIK/Proyek-01/</code> dan nama <code>laporan-v02.pdf</code>. Simpan cadangan sebelum memindahkan atau menghapus berkas.</li></ul>
+                <div class="tik-callout"><b>Jika perangkat bermasalah:</b> catat pesan kesalahan, simpan pekerjaan, periksa daya/kabel dan ruang penyimpanan, lalu coba mulai ulang dengan aman. Jangan membongkar perangkat listrik atau memasang aplikasi “pembersih” yang tidak tepercaya.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-02"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-03" data-category="koneksi" data-keywords="internet intranet lan wan wlan wifi wi-fi router switch modem dns ip tcp http https bandwidth latensi paket jaringan server klien">
+              <summary><span class="tik-module-number">03</span><span class="tik-module-heading"><span class="tik-module-category">KONEKSI</span><span class="tik-module-title" role="heading" aria-level="3">Jaringan komputer &amp; internet</span><span class="tik-module-description">Bagaimana perangkat terhubung dan sebuah halaman web sampai ke layar.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> membedakan jaringan, internet, dan web serta memahami alur aksesnya.</p>
+                <p><strong>Jaringan komputer</strong> menghubungkan perangkat agar dapat bertukar data atau berbagi sumber daya. LAN mencakup area terbatas seperti sekolah; WLAN adalah LAN nirkabel. WAN mencakup area lebih luas. <strong>Internet</strong> adalah jaringan dari banyak jaringan, sedangkan <strong>web</strong> adalah salah satu layanan yang berjalan di atasnya.</p>
+                <div class="tik-concept-grid"><div><h4>Perangkat jaringan</h4><p><b>Switch</b> menghubungkan perangkat dalam jaringan lokal. <b>Router</b> meneruskan paket antarjaringan. <b>Access point</b> menyediakan akses nirkabel. <b>Modem atau ONT</b> menghubungkan sisi pengguna dengan teknologi akses penyedia layanan. Satu perangkat rumahan bisa menggabungkan beberapa fungsi.</p></div><div><h4>Aturan komunikasi</h4><p>Protokol adalah aturan pertukaran data. IP menangani pengalamatan dan pengiriman paket lintas jaringan; TCP mendukung pengiriman yang andal dan berurutan. HTTP digunakan untuk komunikasi web, sementara HTTPS melindunginya dengan TLS.</p></div></div>
+                <h4>Saat kamu membuka sebuah situs</h4>
+                <ol><li>Browser membaca <strong>URL</strong>, yaitu alamat sumber daya yang diminta.</li><li><strong>DNS</strong> membantu mencari alamat IP yang terkait dengan nama domain; hasilnya dapat tersimpan sementara dalam cache.</li><li>Perangkat mengirim permintaan melalui jaringan. Data dipindahkan dalam paket; koneksi HTTPS memakai perlindungan TLS.</li><li><strong>Server</strong> mengirim respons. Browser menafsirkan HTML, CSS, dan JavaScript untuk menampilkan halaman.</li></ol>
+                <ul><li><strong>Wi-Fi bukan internet.</strong> Terhubung ke Wi-Fi berarti tersambung ke jaringan lokal; akses internetnya masih bisa terputus.</li><li><strong>Bandwidth</strong> adalah kapasitas laju transfer; <strong>latensi</strong> adalah waktu tunda. Mbps berarti megabit per detik, bukan megabyte per detik. Kecepatan 8 Mbps setara sekitar 1 MB/detik secara teoretis, sebelum overhead dan gangguan.</li><li><strong>Alamat IP</strong> dapat memakai IPv4 atau IPv6. Alamat privat dipakai dalam jaringan lokal; alamat publik digunakan untuk komunikasi di internet.</li></ul>
+                <div class="tik-callout"><b>Uji sederhana:</b> jika Wi-Fi terhubung tetapi situs tidak terbuka, periksa apakah perangkat lain mengalami hal yang sama dan apakah hanya satu situs yang bermasalah. Jangan langsung menyimpulkan laptopnya rusak.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-03"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-04" data-category="koneksi" data-keywords="browser mesin pencari literasi digital hoaks hoax email surel cc bcc komunikasi kolaborasi sumber fakta informasi">
+              <summary><span class="tik-module-number">04</span><span class="tik-module-heading"><span class="tik-module-category">KONEKSI</span><span class="tik-module-title" role="heading" aria-level="3">Mencari informasi &amp; berkomunikasi</span><span class="tik-module-description">Pencarian yang efektif, cek fakta, surel, dan kolaborasi daring.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> menemukan sumber yang layak dipercaya dan berkomunikasi dengan jelas.</p>
+                <p><strong>Browser</strong> seperti Firefox, Chrome, atau Safari adalah aplikasi untuk mengakses web. <strong>Mesin pencari</strong> membantu menemukan halaman dalam indeksnya. Posisi teratas hasil pencarian bukan jaminan kebenaran; beberapa hasil juga merupakan iklan.</p>
+                <h4>Cari dengan pertanyaan yang spesifik</h4>
+                <ul><li>Ganti kata terlalu umum seperti <code>sampah</code> dengan <code>cara memilah sampah organik di sekolah</code>.</li><li>Pada mesin pencari yang mendukungnya, tanda kutip mencari frasa, misalnya <code>"literasi digital"</code>; <code>site:go.id</code> membatasi domain; tanda minus mengecualikan kata.</li><li>Periksa penulis, keahlian, tanggal, tujuan penerbitan, dan bukti yang disertakan. Tanggal lama tidak selalu salah, tetapi konteksnya bisa berubah.</li><li>Baca melampaui judul. Bandingkan dengan sumber independen dan sumber asli seperti laporan penelitian, dokumen resmi, atau pernyataan lengkap.</li></ul>
+                <div class="tik-callout"><b>Berhenti sebelum membagikan.</b> Klaim mengejutkan, gambar tanpa konteks, dan pesan “sebarkan sekarang” perlu diperiksa. Pencarian gambar terbalik dapat membantu menelusuri penggunaan gambar sebelumnya, tetapi bukan bukti tunggal keasliannya.</div>
+                <h4>Surel dan kerja bersama</h4>
+                <ul><li>Gunakan subjek jelas, salam, tujuan, konteks, dan penutup. Contoh: <code>Tugas TIK — Kelompok 2 — Permohonan masukan</code>.</li><li><strong>To</strong> untuk penerima utama; <strong>Cc</strong> untuk tembusan yang terlihat; <strong>Bcc</strong> menyembunyikan alamat penerima Bcc dari penerima lain. Periksa kembali sebelum memilih “balas semua”.</li><li>Pastikan lampiran benar, ukurannya sesuai, dan tidak berisi data pribadi yang tidak perlu.</li><li>Saat berbagi dokumen, pilih izin <strong>lihat, komentar, atau edit</strong> sesuai kebutuhan. Jangan membuka akses publik jika cukup untuk kelompok kecil.</li><li>Sepakati pembagian tugas, gunakan komentar yang sopan, dan manfaatkan riwayat versi. Jangan menyebarkan rekaman rapat atau foto teman tanpa izin.</li></ul>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-04"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-05" data-category="karya" data-keywords="word excel powerpoint libreoffice docs sheets slides spreadsheet sum average if rumus sel dokumen presentasi produktivitas">
+              <summary><span class="tik-module-number">05</span><span class="tik-module-heading"><span class="tik-module-category">BERKARYA</span><span class="tik-module-title" role="heading" aria-level="3">Dokumen, spreadsheet &amp; presentasi</span><span class="tik-module-description">Keterampilan aplikasi yang dipakai untuk belajar dan bekerja.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> membuat dokumen rapi, menghitung data sederhana, dan menyajikan gagasan.</p>
+                <h4>Pengolah kata: struktur dulu, dekorasi kemudian</h4>
+                <p>Microsoft Word, LibreOffice Writer, dan Google Docs membantu menyusun teks. Gunakan gaya judul/heading, paragraf, daftar, penomoran halaman, serta daftar isi otomatis. Cantumkan sumber, beri teks alternatif pada gambar bermakna, dan periksa ejaan. Ekspor PDF bila ingin mempertahankan tata letak; simpan juga berkas sumber untuk diedit.</p>
+                <h4>Spreadsheet: sel, data, dan rumus</h4>
+                <p>Excel, LibreOffice Calc, dan Google Sheets mengatur data dalam baris dan kolom. <code>B2</code> berarti kolom B, baris 2; <code>B2:B4</code> adalah rentang sel. Rumus umumnya diawali <code>=</code>. Referensi relatif berubah saat disalin, sedangkan <code>$B$2</code> mengunci kolom dan baris.</p>
+                <div class="tik-table-wrap" role="region" aria-label="Contoh data spreadsheet" tabindex="0"><table><caption>Contoh lembar kerja: botol plastik terkumpul</caption><thead><tr><th scope="col">Baris</th><th scope="col">Kolom A · Hari</th><th scope="col">Kolom B · Jumlah</th></tr></thead><tbody><tr><th scope="row">1</th><td>Hari</td><td>Jumlah botol</td></tr><tr><th scope="row">2</th><td>Senin</td><td>12</td></tr><tr><th scope="row">3</th><td>Selasa</td><td>18</td></tr><tr><th scope="row">4</th><td>Rabu</td><td>15</td></tr></tbody></table></div>
+                <ul><li><code>=SUM(B2:B4)</code> menghasilkan <strong>45</strong>.</li><li><code>=AVERAGE(B2:B4)</code> menghasilkan <strong>15</strong>.</li><li><code>=IF(B2&gt;=15,"Tercapai","Belum")</code> menghasilkan <strong>Belum</strong> karena B2 bernilai 12.</li></ul>
+                <p class="tik-small-note">Nama fungsi dan pemisah argumen bergantung aplikasi serta lokal bahasa. Jika koma tidak diterima, coba titik koma: <code>=IF(B2&gt;=15;"Tercapai";"Belum")</code>. Angka contoh di atas adalah data latihan, bukan hasil survei.</p>
+                <h4>Presentasi: bantu audiens memahami</h4>
+                <p>PowerPoint, Impress, dan Google Slides cocok untuk menyampaikan ide. Pilih satu gagasan utama per slide, teks singkat, ukuran huruf terbaca, kontras cukup, dan visual yang relevan. Grafik batang membandingkan kategori; grafik garis menunjukkan perubahan waktu. Jelaskan grafik, jangan hanya menempelkannya.</p>
+                <div class="tik-callout"><b>Kebiasaan yang membantu:</b> simpan berkala, gunakan pratinjau cetak, dan cek ulang rumus. Pintasan umum: <kbd>Ctrl</kbd> + <kbd>S</kbd> untuk menyimpan, <kbd>Ctrl</kbd> + <kbd>Z</kbd> untuk membatalkan. Di banyak aplikasi macOS, gunakan <kbd>⌘</kbd> sebagai pengganti <kbd>Ctrl</kbd>.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-05"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-06" data-category="karya" data-keywords="data database basis data sql tabel record field primary key analisis visualisasi statistik median rata-rata kuantitatif kualitatif">
+              <summary><span class="tik-module-number">06</span><span class="tik-module-heading"><span class="tik-module-category">BERKARYA</span><span class="tik-module-title" role="heading" aria-level="3">Data, analisis &amp; basis data</span><span class="tik-module-description">Dari pengumpulan yang bertanggung jawab sampai kesimpulan yang masuk akal.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> mengolah data sederhana dan memahami struktur basis data relasional.</p>
+                <p>Data kuantitatif menyatakan jumlah atau ukuran, misalnya tinggi tanaman. Data kualitatif menyatakan kategori atau sifat, misalnya jenis tanaman. Pilihan tipe data memengaruhi cara menghitung dan menampilkannya.</p>
+                <ol><li><b>Tentukan pertanyaan:</b> apa yang benar-benar ingin diketahui?</li><li><b>Kumpulkan seperlunya:</b> catat sumber, waktu, satuan, dan izin. Hindari identitas pribadi jika tidak diperlukan.</li><li><b>Bersihkan:</b> periksa duplikasi, sel kosong, salah ketik, dan satuan yang tidak konsisten. Jangan menghapus nilai hanya karena tidak sesuai harapan.</li><li><b>Analisis:</b> hitung jumlah, rata-rata, median, atau persentase sesuai tujuan.</li><li><b>Sajikan dan evaluasi:</b> pilih grafik yang tepat, beri label sumbu dan satuan, lalu jelaskan batas data.</li></ol>
+                <div class="tik-callout"><b>Rata-rata tidak selalu mewakili.</b> Untuk data 2, 3, 4, 5, dan 26, rata-ratanya 8, tetapi mediannya 4. Nilai ekstrem menarik rata-rata. Korelasi juga tidak otomatis berarti hubungan sebab-akibat.</div>
+                <h4>Mengenal basis data</h4>
+                <p>Basis data menyimpan data secara terstruktur. Pada basis data relasional, tabel berisi baris (<em>record</em>) dan kolom (<em>field</em>). <strong>Primary key</strong> membedakan setiap baris secara unik; <strong>foreign key</strong> menghubungkan tabel. Contohnya, tabel buku dan tabel peminjaman di perpustakaan dihubungkan oleh ID buku.</p>
+                <p>SQL adalah bahasa untuk mengakses dan mengelola banyak basis data relasional. Contoh berikut memilih judul buku bertema budaya dari tabel <code>buku</code>:</p>
+                <pre tabindex="0"><code>SELECT judul
+FROM buku
+WHERE kategori = 'Budaya';</code></pre>
+                <p class="tik-small-note">Contoh kode ini untuk dibaca, tidak dijalankan oleh halaman. Sistem nyata juga memerlukan validasi, kontrol akses, cadangan, dan perlindungan data pribadi.</p>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-06"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-07" data-category="karya" data-keywords="computational thinking berpikir komputasional dekomposisi pola abstraksi algoritma flowchart pseudocode percabangan perulangan">
+              <summary><span class="tik-module-number">07</span><span class="tik-module-heading"><span class="tik-module-category">BERKARYA</span><span class="tik-module-title" role="heading" aria-level="3">Berpikir komputasional &amp; algoritma</span><span class="tik-module-description">Memecah masalah dan menyusun langkah yang dapat diuji.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> mengubah persoalan sehari-hari menjadi langkah penyelesaian yang jelas.</p>
+                <div class="tik-concept-grid"><div><h4>Dekomposisi</h4><p>Pecah persoalan besar menjadi bagian kecil. Membuat majalah kelas dapat dibagi menjadi riset, penulisan, penyuntingan, dan tata letak.</p></div><div><h4>Pengenalan pola</h4><p>Cari kesamaan yang dapat digunakan kembali, seperti format judul dan kredit foto pada setiap artikel.</p></div><div><h4>Abstraksi</h4><p>Pilih informasi yang relevan; abaikan detail yang tidak diperlukan untuk tujuan saat ini.</p></div><div><h4>Algoritma</h4><p>Susun langkah berurutan, jelas, dan berhingga untuk menyelesaikan tugas. Algoritma dapat ditulis tanpa komputer.</p></div></div>
+                <h4>Tiga pola dasar</h4>
+                <p><strong>Urutan</strong> menjalankan langkah satu per satu. <strong>Percabangan</strong> memilih tindakan berdasarkan kondisi. <strong>Perulangan</strong> mengulang tindakan selama kondisi tertentu atau untuk sejumlah item.</p>
+                <pre tabindex="0"><code>total ← 0
+UNTUK setiap jumlah_botol dalam [12, 18, 15]:
+    total ← total + jumlah_botol
+JIKA total &gt;= 40:
+    TAMPILKAN "Target tercapai"
+SELAIN ITU:
+    TAMPILKAN "Lanjutkan pengumpulan"</code></pre>
+                <p>Pseudocode di atas bukan bahasa pemrograman tertentu. Hasilnya adalah total 45 dan pesan “Target tercapai”. Dalam flowchart, oval biasanya berarti mulai/selesai, persegi panjang untuk proses, jajar genjang untuk input/output, dan belah ketupat untuk keputusan.</p>
+                <div class="tik-callout"><b>Uji algoritmamu:</b> bagaimana hasilnya jika daftar kosong, total tepat 40, atau ada angka negatif? Tentukan aturan untuk data tidak valid. Berpikir tentang kasus batas sama pentingnya dengan kasus biasa.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-07"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-08" data-category="karya" data-keywords="coding pemrograman python html css javascript web variabel tipe data fungsi debugging bug frontend backend pengujian">
+              <summary><span class="tik-module-number">08</span><span class="tik-module-heading"><span class="tik-module-category">BERKARYA</span><span class="tik-module-title" role="heading" aria-level="3">Dasar pemrograman &amp; pembuatan web</span><span class="tik-module-description">Mengenal bahasa komputer, membaca kode, dan membangun halaman pertama.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> mengenali konsep pemrograman dan peran HTML, CSS, serta JavaScript.</p>
+                <ul><li><strong>Variabel</strong> memberi nama pada nilai. Tipe umum meliputi bilangan bulat, bilangan pecahan, teks (<em>string</em>), dan boolean (<code>True</code>/<code>False</code> di Python).</li><li><strong>Operator</strong> menghitung atau membandingkan nilai. Kondisi dan perulangan mengatur alur program.</li><li><strong>Fungsi</strong> mengelompokkan instruksi agar dapat dipanggil kembali dengan masukan yang berbeda.</li><li><strong>Debugging</strong> menelusuri penyebab kesalahan. Baca pesan galat, periksa nilai, dan uji bagian kecil; jangan sekadar menyalin solusi tanpa memahaminya.</li></ul>
+                <h4>Contoh Python: menghitung rata-rata</h4>
+                <pre tabindex="0"><code>def rata_rata(angka):
+    if len(angka) == 0:
+        return None
+    return sum(angka) / len(angka)
+
+botol = [12, 18, 15]
+print(rata_rata(botol))  # 15.0</code></pre>
+                <p>Indentasi di Python menentukan blok kode. Fungsi di atas menangani daftar kosong agar tidak membagi dengan nol; contoh mengasumsikan daftar berisi angka.</p>
+                <h4>Tiga lapisan halaman web</h4>
+                <div class="tik-web-layers"><div><b>HTML</b><span>Struktur &amp; makna</span><small>Judul, paragraf, tautan, formulir.</small></div><div><b>CSS</b><span>Gaya &amp; tata letak</span><small>Warna, jarak, grid, responsivitas.</small></div><div><b>JavaScript</b><span>Perilaku &amp; interaksi</span><small>Filter, perhitungan, kuis.</small></div></div>
+                <pre tabindex="0"><code>&lt;!doctype html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Catatan Budayaku&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Cerita dari kampungku&lt;/h1&gt;
+  &lt;p&gt;Satu tradisi, banyak pelajaran.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>HTML adalah bahasa markup, CSS adalah bahasa stylesheet, dan JavaScript adalah bahasa pemrograman. <strong>Frontend</strong> berhubungan dengan antarmuka pengguna; <strong>backend</strong> menangani layanan sisi server. Situs statis seperti ruang belajar ini tidak memerlukan backend khusus untuk menyajikan materi.</p>
+                <div class="tik-callout"><b>Coba sendiri:</b> ketik contoh HTML di editor teks, simpan sebagai <code>index.html</code>, lalu buka dengan browser. Kode di halaman ini tidak dieksekusi otomatis. Gunakan editor yang menyimpan teks biasa, bukan dokumen pengolah kata.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-08"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-09" data-category="aman" data-keywords="keamanan siber privasi password kata sandi passkey mfa 2fa otp phishing malware ransomware backup cadangan enkripsi firewall antivirus">
+              <summary><span class="tik-module-number">09</span><span class="tik-module-heading"><span class="tik-module-category">DIGITAL BIJAK</span><span class="tik-module-title" role="heading" aria-level="3">Keamanan siber &amp; privasi</span><span class="tik-module-description">Melindungi akun, perangkat, data, dan orang-orang di sekitarmu.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> mengenali ancaman umum dan menerapkan kebiasaan perlindungan dasar.</p>
+                <p><strong>Malware</strong> adalah perangkat lunak berbahaya. Contohnya ransomware yang dapat mengunci data dan meminta tebusan. <strong>Phishing</strong> menipu orang agar menyerahkan informasi atau melakukan tindakan berbahaya dengan menyamar sebagai pihak tepercaya.</p>
+                <ul class="tik-security-list"><li><b>Gunakan kata sandi panjang dan unik.</b> Hindari penggunaan ulang antarlayanan. Pengelola kata sandi yang tepercaya membantu membuat dan menyimpannya.</li><li><b>Aktifkan autentikasi multifaktor (MFA).</b> Gunakan aplikasi autentikator atau kunci keamanan bila tersedia. Passkey dapat mengurangi risiko phishing. Simpan kode pemulihan di tempat aman dan jangan berikan OTP kepada siapa pun.</li><li><b>Perbarui sistem dan aplikasi.</b> Pembaruan sering menutup celah keamanan. Unduh aplikasi dari sumber resmi dan periksa izin yang diminta.</li><li><b>Periksa pesan sebelum bertindak.</b> Waspadai ancaman mendesak, hadiah tak masuk akal, lampiran tak terduga, dan domain mirip. Buka aplikasi atau situs resmi secara mandiri untuk memverifikasi.</li><li><b>Cadangkan data penting.</b> Prinsip 3-2-1: tiga salinan total termasuk data utama, pada dua jenis media, dengan satu salinan di lokasi berbeda. Salinan offline atau terlindung dari perubahan membantu menghadapi ransomware. Uji pemulihannya.</li><li><b>Batasi data yang dibagikan.</b> Tinjau izin kamera, lokasi, mikrofon, dan akses kontak. Kunci layar dan keluar dari akun saat memakai perangkat bersama.</li></ul>
+                <div class="tik-callout tik-callout-warning"><b>HTTPS bukan stempel “situs pasti aman”.</b> HTTPS melindungi koneksi ke domain yang diakses. Situs penipu juga bisa memakai HTTPS. Mode penyamaran pun tidak membuatmu anonim terhadap semua situs, sekolah, kantor, atau penyedia internet.</div>
+                <h4>Jika terlanjur mengeklik atau membagikan data</h4>
+                <p>Hentikan interaksi dan jangan kirim informasi tambahan. Dari perangkat yang tepercaya, ganti kata sandi yang terdampak, akhiri sesi asing, dan periksa metode pemulihan. Hubungi penyedia layanan melalui kanal resmi. Jika ada transaksi keuangan, segera hubungi bank atau layanan pembayaran. Simpan bukti yang aman dan minta bantuan orang dewasa tepercaya atau petugas TI; jangan menyebarkan data korban.</p>
+                <p><strong>Enkripsi</strong> melindungi keterbacaan data tanpa kunci yang sesuai. <strong>Firewall</strong> menyaring lalu lintas berdasarkan aturan. Keduanya membantu, tetapi tidak menggantikan pembaruan, cadangan, dan kehati-hatian.</p>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-09"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-10" data-category="aman" data-keywords="etika netiket hak cipta plagiarisme lisensi creative commons jejak digital cyberbullying perundungan kesehatan ergonomi aksesibilitas limbah elektronik">
+              <summary><span class="tik-module-number">10</span><span class="tik-module-heading"><span class="tik-module-category">DIGITAL BIJAK</span><span class="tik-module-title" role="heading" aria-level="3">Etika, hak cipta &amp; keseimbangan digital</span><span class="tik-module-description">Menjadi warga digital yang menghormati orang lain dan merawat diri.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> berkarya dan berinteraksi tanpa mengabaikan hak, keselamatan, atau kebutuhan orang lain.</p>
+                <h4>Jejak digital dan netiket</h4>
+                <p>Unggahan, komentar, dan aktivitas daring dapat meninggalkan jejak. Salinan atau tangkapan layar mungkin tetap ada setelah konten dihapus. Berpikir sebelum mengunggah lebih mudah daripada memperbaiki dampaknya.</p>
+                <ul><li>Kritik gagasan, bukan merendahkan orang. Hormati perbedaan, jangan menyebarkan data pribadi, dan minta persetujuan sebelum memublikasikan foto atau cerita orang lain.</li><li>Jika terjadi perundungan, jangan ikut memperluasnya. Simpan bukti seperlunya, gunakan fitur blokir/lapor, dan cari bantuan guru atau orang dewasa tepercaya.</li><li>Buat karya yang lebih inklusif: gunakan kontras terbaca, heading berurutan, teks alternatif gambar, takarir video, dan kontrol yang bisa diakses dengan keyboard.</li></ul>
+                <h4>Hak cipta bukan sekadar menulis nama sumber</h4>
+                <p>Gambar atau musik yang muncul di internet tidak otomatis bebas digunakan. Periksa lisensi, izin, dan ketentuan penggunaan. Menyebut sumber tidak dengan sendirinya memberikan hak untuk menyalin. Untuk tugas, bedakan kutipan, parafrasa, dan gagasan sendiri; semuanya tetap memerlukan atribusi yang sesuai.</p>
+                <div class="tik-concept-grid"><div><h4>Kenali lisensinya</h4><p>Pada lisensi Creative Commons, <b>BY</b> meminta atribusi; <b>SA</b> mengatur lisensi yang sama untuk adaptasi yang dibagikan; <b>NC</b> membatasi penggunaan nonkomersial; <b>ND</b> melarang pembagian versi adaptasi. Baca lisensi lengkap, bukan hanya ikonnya.</p></div><div><h4>Biasakan memberi kredit</h4><p>Catat judul, pembuat, tautan sumber, lisensi, dan perubahan yang kamu buat. Untuk budaya lokal, pertimbangkan pula izin komunitas dan batas pengetahuan yang tidak boleh dipublikasikan.</p></div></div>
+                <h4>Teknologi yang tidak menghabiskan diri dan bumi</h4>
+                <p>Atur waktu layar, ambil jeda, ubah posisi secara berkala, jaga jarak pandang yang nyaman, dan hindari volume suara berlebihan. Jangan biarkan notifikasi mengganggu tidur atau kegiatan penting. Rawat perangkat agar awet, hemat energi, dan serahkan limbah elektronik ke pengelola yang sesuai, bukan dibakar atau dibuang sembarangan.</p>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-10"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-11" data-category="masa-depan" data-keywords="ai kecerdasan buatan artificial intelligence machine learning generatif cloud komputasi awan iot internet of things sensor bias halusinasi">
+              <summary><span class="tik-module-number">11</span><span class="tik-module-heading"><span class="tik-module-category">MASA DEPAN</span><span class="tik-module-title" role="heading" aria-level="3">AI, cloud &amp; Internet of Things</span><span class="tik-module-description">Teknologi yang sedang membentuk cara kita belajar, bekerja, dan hidup.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> memahami kegunaan dan keterbatasan teknologi terkini tanpa sekadar ikut tren.</p>
+                <h4>Kecerdasan buatan (AI)</h4>
+                <p>AI adalah bidang yang membangun sistem untuk tugas seperti pengenalan pola, prediksi, dan pengambilan keputusan tertentu. <em>Machine learning</em> mempelajari pola dari data. AI generatif menghasilkan teks, gambar, audio, atau kode berdasarkan pola yang dipelajari; hasilnya tidak selalu benar atau asli dalam arti hukum.</p>
+                <ul><li>AI dapat membantu merangkum, membuat ide awal, atau menjelaskan konsep. Namun, ia bisa menghasilkan informasi dan rujukan yang tampak meyakinkan tetapi keliru, sering disebut halusinasi.</li><li>Periksa hasil dengan sumber tepercaya, terutama angka, kutipan, dan klaim penting. Jangan menganggap jawaban lancar sebagai bukti kebenaran.</li><li>Jangan memasukkan kata sandi, data pribadi, atau dokumen rahasia. Bias data dapat menghasilkan perlakuan yang tidak adil.</li><li>Ikuti aturan tugas sekolah dan jelaskan penggunaan AI. Gunakan sebagai alat bantu belajar, bukan pengganti pemahaman atau penilaian manusia.</li></ul>
+                <div class="tik-concept-grid"><div><h4>Cloud computing</h4><p>Sumber daya komputasi seperti penyimpanan, aplikasi, atau server disediakan melalui jaringan. Contohnya dokumen kolaboratif dan pencadangan daring. Perhatikan biaya, privasi, ketergantungan koneksi, serta izin akses. Sinkronisasi bukan selalu cadangan: penghapusan bisa ikut tersinkron.</p></div><div><h4>Internet of Things (IoT)</h4><p>Perangkat fisik dengan sensor atau aktuator yang terhubung ke jaringan untuk bertukar data atau melakukan tindakan. Contohnya sensor kelembapan pada irigasi. Pertimbangkan ketepatan sensor, keamanan akun, pembaruan, dan apa yang terjadi saat koneksi terputus.</p></div></div>
+                <div class="tik-callout"><b>Contoh perintah belajar untuk AI:</b> “Jelaskan perbedaan RAM dan SSD untuk pemula. Beri analogi dan tiga pertanyaan latihan.” Setelah itu, cocokkan penjelasannya dengan sumber lain dan coba jawab latihannya sendiri.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-11"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+
+            <details class="tik-module" id="bab-12" data-category="masa-depan" data-keywords="penerapan manfaat dampak karier pekerjaan profesi pendidikan kesehatan ekonomi budaya kesenjangan digital ui ux developer jaringan data analis">
+              <summary><span class="tik-module-number">12</span><span class="tik-module-heading"><span class="tik-module-category">MASA DEPAN</span><span class="tik-module-title" role="heading" aria-level="3">TIK dalam kehidupan &amp; jalan karier</span><span class="tik-module-description">Manfaat nyata, tantangan sosial, dan keterampilan untuk terus bertumbuh.</span></span><span class="tik-module-toggle" aria-hidden="true">+</span></summary>
+              <div class="tik-module-body">
+                <p class="tik-objective"><b>Tujuan:</b> menilai dampak teknologi dan mengenali beragam peran di bidang TIK.</p>
+                <ul><li><b>Pendidikan:</b> kelas daring, simulasi, dan materi yang lebih mudah diakses. Tantangannya meliputi koneksi, perangkat, dan kualitas informasi.</li><li><b>Kesehatan:</b> pencatatan dan komunikasi layanan dapat terbantu, tetapi kerahasiaan data penting. Informasi atau aplikasi kesehatan bukan pengganti pemeriksaan profesional.</li><li><b>Ekonomi:</b> perdagangan elektronik dan pembayaran digital memperluas akses, sekaligus menuntut kewaspadaan terhadap penipuan serta biaya layanan.</li><li><b>Pertanian dan lingkungan:</b> sensor, peta, dan analisis membantu pemantauan. Data yang keliru atau sistem yang tidak terawat dapat menghasilkan keputusan buruk.</li><li><b>Budaya:</b> arsip digital, dokumentasi bahasa, dan cerita interaktif membantu pengetahuan menjangkau generasi baru. Libatkan pemilik pengetahuan dan hormati hak komunitas.</li></ul>
+                <h4>Tidak semua orang mulai dari titik yang sama</h4>
+                <p>Kesenjangan digital mencakup perbedaan akses perangkat, jaringan, keterampilan, dan kemampuan menggunakan layanan secara bermakna. Solusi yang baik perlu mempertimbangkan biaya, disabilitas, bahasa, lokasi, dan pengguna dengan koneksi terbatas.</p>
+                <h4>Beberapa jalur yang bisa dijelajahi</h4>
+                <div class="tik-concept-grid"><div><h4>Pengembang perangkat lunak</h4><p>Merancang, menulis, menguji, dan merawat program. Bekal: logika, pemrograman, dokumentasi, kerja tim.</p></div><div><h4>Teknisi &amp; administrator jaringan</h4><p>Menjaga perangkat dan konektivitas. Bekal: sistem operasi, jaringan, diagnosis masalah, keamanan.</p></div><div><h4>Analis data</h4><p>Mengubah data menjadi temuan yang dapat dipertanggungjawabkan. Bekal: spreadsheet, statistik, SQL, komunikasi.</p></div><div><h4>Desainer UI/UX &amp; praktisi keamanan</h4><p>Dua jalur berbeda: UI/UX berfokus pada pengalaman pengguna; keamanan pada perlindungan sistem dan data. Keduanya memerlukan empati dan pemahaman konteks.</p></div></div>
+                <div class="tik-callout"><b>Mulai dengan karya kecil.</b> Buat portofolio yang menjelaskan masalah, proses, hasil, dan pelajaran yang kamu dapat. Kemampuan belajar, etika, dan komunikasi sama pentingnya dengan penguasaan satu aplikasi.</div>
+                <label class="tik-complete" data-tik-interactive hidden><input type="checkbox" data-tik-complete="bab-12"><span>Saya sudah memahami bab ini</span></label>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="tik-block" id="praktik" aria-labelledby="praktik-title">
+          <div class="tik-section-heading"><p class="section-kicker"><span class="kicker-number">02</span><span>DARI TEORI KE KARYA</span></p><h2 id="praktik-title">Pengetahuan tumbuh<br><em>saat dicoba.</em></h2><p>Empat proyek kecil. Waktu hanya perkiraan—kerjakan sesuai ritmemu, sendiri atau bersama teman.</p></div>
+          <div class="tik-project-grid">
+            <details class="tik-project"><summary><span class="tik-project-meta">PROYEK 01 <span>± 30 MENIT</span></span><span class="tik-project-icon" aria-hidden="true">Aa</span><span class="tik-project-title" role="heading" aria-level="3">Arsip cerita lokal</span><span class="tik-project-desc">Latih riset, dokumen, dan atribusi lewat satu cerita dari sekitarmu.</span><span class="tik-project-open">Lihat langkahnya <span aria-hidden="true">+</span></span></summary><div class="tik-project-body"><p><b>Alat:</b> pengolah kata dan folder penyimpanan.</p><ol><li>Pilih satu tradisi atau benda budaya. Minta izin sebelum mewawancarai atau memotret orang.</li><li>Tulis 300–500 kata dengan judul, pengantar, isi, dan daftar sumber.</li><li>Tambahkan satu foto milik sendiri atau berlisensi sesuai. Beri kredit dan deskripsi alternatif.</li><li>Simpan berkas sumber dan PDF dengan nama jelas. Buat satu salinan cadangan.</li></ol><p class="tik-project-output"><b>Hasil:</b> satu dokumen yang rapi, bersumber, dan menghormati pemilik cerita.</p><a href="#bab-05">Baca kembali bab 05 <span aria-hidden="true">↗</span></a></div></details>
+            <details class="tik-project"><summary><span class="tik-project-meta">PROYEK 02 <span>± 25 MENIT</span></span><span class="tik-project-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M4 3v17h17M8 16v-5m5 5V6m5 10V9"/></svg></span><span class="tik-project-title" role="heading" aria-level="3">Data sampah kelas</span><span class="tik-project-desc">Ubah data sederhana menjadi perhitungan, grafik, dan kesimpulan.</span><span class="tik-project-open">Lihat langkahnya <span aria-hidden="true">+</span></span></summary><div class="tik-project-body"><p><b>Alat:</b> aplikasi spreadsheet.</p><ol><li>Masukkan data latihan botol plastik dari bab 05 ke kolom A dan B. Tandai sebagai data simulasi.</li><li>Hitung jumlah dengan SUM dan rata-rata dengan AVERAGE.</li><li>Buat grafik batang berlabel hari dan jumlah botol.</li><li>Tulis dua temuan dan satu batasan. Tiga hari data belum cukup untuk menyimpulkan kebiasaan setahun.</li></ol><p class="tik-project-output"><b>Hasil:</b> satu lembar kerja dengan total 45, rata-rata 15, grafik, dan interpretasi.</p><a href="#bab-06">Baca kembali bab 06 <span aria-hidden="true">↗</span></a></div></details>
+            <details class="tik-project"><summary><span class="tik-project-meta">PROYEK 03 <span>± 45 MENIT</span></span><span class="tik-project-icon" aria-hidden="true">&lt;/&gt;</span><span class="tik-project-title" role="heading" aria-level="3">Halaman web pertamamu</span><span class="tik-project-desc">Buat ruang kecil untuk memperkenalkan hal yang kamu pedulikan.</span><span class="tik-project-open">Lihat langkahnya <span aria-hidden="true">+</span></span></summary><div class="tik-project-body"><p><b>Alat:</b> editor teks biasa dan browser.</p><ol><li>Buat folder proyek, lalu salin contoh HTML pada bab 08 ke <code>index.html</code>.</li><li>Ubah judul dan isi dengan ceritamu sendiri. Tambahkan daftar berisi tiga fakta dan tautan sumbernya.</li><li>Tambahkan CSS sederhana untuk warna, ukuran teks, dan jarak yang nyaman.</li><li>Buka di browser. Uji ukuran layar sempit, semua tautan, dan navigasi tombol Tab. Perbaiki kesalahannya.</li></ol><p class="tik-project-output"><b>Hasil:</b> halaman lokal yang bisa dibaca. Tidak perlu hosting atau akun untuk memulai.</p><a href="#bab-08">Baca kembali bab 08 <span aria-hidden="true">↗</span></a></div></details>
+            <details class="tik-project"><summary><span class="tik-project-meta">PROYEK 04 <span>± 20 MENIT</span></span><span class="tik-project-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3 4 6v5c0 5 8 10 8 10s8-5 8-10V6l-8-3Z"/><path d="m8 12 3 3 5-6"/></svg></span><span class="tik-project-title" role="heading" aria-level="3">Audit kebiasaan digital</span><span class="tik-project-desc">Periksa perlindungan akun dan kebiasaan berbagi tanpa membocorkan rahasia.</span><span class="tik-project-open">Lihat langkahnya <span aria-hidden="true">+</span></span></summary><div class="tik-project-body"><p><b>Alat:</b> pengaturan perangkat dan catatan pribadi.</p><ol><li>Periksa pembaruan sistem, kunci layar, dan izin aplikasi yang tidak diperlukan.</li><li>Tinjau satu akun milikmu: apakah kata sandinya unik dan MFA tersedia? Gunakan pengaturan resmi layanan.</li><li>Pastikan satu berkas penting punya cadangan yang bisa dibuka.</li><li>Catat dua kebiasaan yang ingin diubah, misalnya memeriksa sumber sebelum membagikan pesan.</li></ol><p class="tik-project-output"><b>Hasil:</b> daftar tindakan pribadi. Jangan menulis atau mengirim kata sandi, OTP, atau kode pemulihan dalam tugas.</p><a href="#bab-09">Baca kembali bab 09 <span aria-hidden="true">↗</span></a></div></details>
+          </div>
+        </section>
+
+        <section class="tik-block" id="kuis" aria-labelledby="kuis-title">
+          <div class="tik-section-heading"><p class="section-kicker"><span class="kicker-number">03</span><span>BERHENTI SEJENAK, CEK PEMAHAMAN</span></p><h2 id="kuis-title">Sudah sejauh<br><em>apa kamu paham?</em></h2><p>Bukan ujian, bukan perlombaan. Jawab 10 pertanyaan, lalu pelajari alasan di balik jawabannya. Nilai tidak dikirim atau disimpan.</p></div>
+          <details class="tik-quiz-panel" id="tik-quiz-panel"><summary><span class="tik-quiz-symbol" aria-hidden="true">?</span><span><span class="tik-quiz-title" role="heading" aria-level="3">Tantangan kecil, pemahaman baru.</span><span class="tik-quiz-subtitle">10 pilihan ganda · Tanpa batas waktu · Bisa diulang</span></span><span class="tik-quiz-open">Buka kuis <span aria-hidden="true">+</span></span></summary>
+            <noscript><p class="tik-callout">Penilaian kuis memerlukan JavaScript. Kamu tetap bisa mempelajari semua bab dan mencoba empat proyek di atas tanpa JavaScript.</p></noscript>
+            <form id="tik-quiz-form" class="tik-quiz-form" data-tik-interactive hidden>
+              <p class="tik-small-note">Pilih satu jawaban untuk setiap pertanyaan. Tombol “Periksa jawaban” akan menampilkan skor dan pembahasan.</p>
+              <div id="tik-quiz-result" class="tik-quiz-result" role="status" aria-live="polite" tabindex="-1" hidden></div>
+              <div class="tik-quiz-questions">
+                <fieldset data-answer="b" data-chapter="bab-01"><legend><span>01</span> Manakah contoh informasi yang diolah dari data?</legend><label><input type="radio" name="q1" value="a" required><span>Daftar angka suhu tanpa keterangan.</span></label><label><input type="radio" name="q1" value="b"><span>Rata-rata suhu kelas dari tiga pengukuran adalah 29 °C.</span></label><label><input type="radio" name="q1" value="c"><span>Berkas gambar yang belum dibuka.</span></label><p class="tik-quiz-feedback" hidden><span></span>Informasi memberi konteks dan makna pada data; rata-rata suhu adalah hasil pengolahan. <a href="#bab-01">Ulangi bab 01 ↗</a></p></fieldset>
+                <fieldset data-answer="a" data-chapter="bab-02"><legend><span>02</span> Apa perbedaan utama RAM dan SSD?</legend><label><input type="radio" name="q2" value="a" required><span>RAM menampung data kerja sementara; SSD menyimpan berkas tanpa daya.</span></label><label><input type="radio" name="q2" value="b"><span>RAM dan SSD sama-sama hanya perangkat input.</span></label><label><input type="radio" name="q2" value="c"><span>SSD selalu kehilangan datanya ketika komputer mati.</span></label><p class="tik-quiz-feedback" hidden><span></span>RAM umumnya bersifat volatil, sedangkan SSD menyimpan data secara nonvolatil. <a href="#bab-02">Ulangi bab 02 ↗</a></p></fieldset>
+                <fieldset data-answer="c" data-chapter="bab-03"><legend><span>03</span> Apa peran DNS ketika membuka situs?</legend><label><input type="radio" name="q3" value="a" required><span>Memastikan semua isi situs benar.</span></label><label><input type="radio" name="q3" value="b"><span>Mengubah Wi-Fi menjadi listrik.</span></label><label><input type="radio" name="q3" value="c"><span>Membantu mencari alamat IP yang terkait dengan nama domain.</span></label><p class="tik-quiz-feedback" hidden><span></span>DNS membantu resolusi nama domain, bukan memverifikasi kebenaran konten atau mengamankan semua aktivitas. <a href="#bab-03">Ulangi bab 03 ↗</a></p></fieldset>
+                <fieldset data-answer="b" data-chapter="bab-04"><legend><span>04</span> Kamu menerima berita mengejutkan tanpa sumber. Apa langkah terbaik?</legend><label><input type="radio" name="q4" value="a" required><span>Segera menyebarkannya karena sudah banyak yang percaya.</span></label><label><input type="radio" name="q4" value="b"><span>Menelusuri sumber asli, tanggal, bukti, dan pembanding tepercaya.</span></label><label><input type="radio" name="q4" value="c"><span>Memercayainya jika desain gambarnya bagus.</span></label><p class="tik-quiz-feedback" hidden><span></span>Popularitas dan tampilan tidak membuktikan kebenaran. Periksa bukti serta konteks sebelum membagikan. <a href="#bab-04">Ulangi bab 04 ↗</a></p></fieldset>
+                <fieldset data-answer="a" data-chapter="bab-05"><legend><span>05</span> B2 = 12, B3 = 18, dan B4 = 15. Berapa hasil =SUM(B2:B4)?</legend><label><input type="radio" name="q5" value="a" required><span>45</span></label><label><input type="radio" name="q5" value="b"><span>15</span></label><label><input type="radio" name="q5" value="c"><span>30</span></label><p class="tik-quiz-feedback" hidden><span></span>SUM menjumlahkan semua nilai dalam rentang: 12 + 18 + 15 = 45. Nilai 15 adalah rata-ratanya. <a href="#bab-05">Ulangi bab 05 ↗</a></p></fieldset>
+                <fieldset data-answer="c" data-chapter="bab-06"><legend><span>06</span> Apa fungsi primary key pada tabel basis data?</legend><label><input type="radio" name="q6" value="a" required><span>Memberi warna yang sama pada semua baris.</span></label><label><input type="radio" name="q6" value="b"><span>Mengurutkan tabel hanya berdasarkan nama.</span></label><label><input type="radio" name="q6" value="c"><span>Mengidentifikasi setiap baris secara unik.</span></label><p class="tik-quiz-feedback" hidden><span></span>Primary key tidak boleh ambigu: setiap baris memiliki nilai kunci yang unik dan tidak null. <a href="#bab-06">Ulangi bab 06 ↗</a></p></fieldset>
+                <fieldset data-answer="b" data-chapter="bab-07"><legend><span>07</span> Menjumlahkan setiap angka dalam sebuah daftar paling sesuai memakai…</legend><label><input type="radio" name="q7" value="a" required><span>Penggantian nama berkas.</span></label><label><input type="radio" name="q7" value="b"><span>Perulangan dan variabel penampung total.</span></label><label><input type="radio" name="q7" value="c"><span>Penghapusan semua angka yang besar.</span></label><p class="tik-quiz-feedback" hidden><span></span>Perulangan mengunjungi setiap angka; variabel total menyimpan hasil penambahan bertahap. <a href="#bab-07">Ulangi bab 07 ↗</a></p></fieldset>
+                <fieldset data-answer="a" data-chapter="bab-08"><legend><span>08</span> Apa peran CSS pada halaman web?</legend><label><input type="radio" name="q8" value="a" required><span>Mengatur gaya visual dan tata letak.</span></label><label><input type="radio" name="q8" value="b"><span>Mengganti fungsi DNS.</span></label><label><input type="radio" name="q8" value="c"><span>Menjamin semua situs bebas penipuan.</span></label><p class="tik-quiz-feedback" hidden><span></span>HTML menyusun struktur, CSS mengatur tampilan, dan JavaScript menambahkan perilaku interaktif. <a href="#bab-08">Ulangi bab 08 ↗</a></p></fieldset>
+                <fieldset data-answer="c" data-chapter="bab-09"><legend><span>09</span> Pesan “petugas bank” meminta OTP lewat tautan HTTPS. Apa yang kamu lakukan?</legend><label><input type="radio" name="q9" value="a" required><span>Mengirim OTP karena tautannya memakai HTTPS.</span></label><label><input type="radio" name="q9" value="b"><span>Meneruskan OTP ke teman untuk diperiksa.</span></label><label><input type="radio" name="q9" value="c"><span>Tidak membagikan OTP dan memverifikasi lewat kanal resmi bank.</span></label><p class="tik-quiz-feedback" hidden><span></span>OTP adalah rahasia. HTTPS melindungi koneksi, tetapi tidak membuktikan pengirim pesan dapat dipercaya. <a href="#bab-09">Ulangi bab 09 ↗</a></p></fieldset>
+                <fieldset data-answer="b" data-chapter="bab-11"><legend><span>10</span> Bagaimana menggunakan jawaban AI untuk tugas secara bertanggung jawab?</legend><label><input type="radio" name="q10" value="a" required><span>Menyalinnya tanpa membaca karena AI selalu benar.</span></label><label><input type="radio" name="q10" value="b"><span>Memeriksa sumber, memahami hasil, dan mengikuti aturan penggunaan AI di sekolah.</span></label><label><input type="radio" name="q10" value="c"><span>Mengunggah data pribadi teman agar jawabannya lebih lengkap.</span></label><p class="tik-quiz-feedback" hidden><span></span>AI bisa keliru dan bias. Verifikasi, perlindungan privasi, serta kejujuran akademik tetap menjadi tanggung jawab pengguna. <a href="#bab-11">Ulangi bab 11 ↗</a></p></fieldset>
+              </div>
+              <div class="tik-quiz-actions"><button class="button button-primary" type="submit">Periksa jawaban <span aria-hidden="true">→</span></button><button class="tik-secondary-button" type="reset">Ulangi kuis</button></div>
+            </form>
+          </details>
+        </section>
+
+        <section class="tik-block" id="glosarium" aria-labelledby="glosarium-title">
+          <div class="tik-section-heading"><p class="section-kicker"><span class="kicker-number">04</span><span>KAMUS KECIL DUNIA DIGITAL</span></p><h2 id="glosarium-title">Istilah baru?<br><em>Kenali artinya.</em></h2><p>Penjelasan singkat untuk istilah yang sering kamu temui. Konteks dan contoh lengkapnya ada di bab pembelajaran.</p></div>
+          <div class="tik-glossary-tools" data-tik-interactive hidden><label class="tik-search-label" for="tik-glossary-search">Cari istilah</label><div class="tik-search-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="tik-glossary-search" placeholder="Misalnya: DNS atau enkripsi" autocomplete="off" aria-controls="tik-glossary"></div><div class="tik-search-meta"><p id="tik-glossary-count" role="status" aria-live="polite">24 istilah</p><button type="button" id="tik-glossary-reset" class="tik-plain-button" hidden>Hapus pencarian</button></div></div>
+          <p class="tik-empty" id="tik-glossary-empty" hidden>Istilah belum ditemukan. Coba kata lain atau hapus pencarian.</p>
+          <dl class="tik-glossary" id="tik-glossary">
+            <div><dt>Algoritma</dt><dd>Urutan langkah yang jelas dan berhingga untuk menyelesaikan suatu tugas.</dd></div>
+            <div><dt>Bandwidth</dt><dd>Kapasitas laju transfer data pada koneksi, biasanya dinyatakan dalam bit per detik.</dd></div>
+            <div><dt>Basis data</dt><dd>Kumpulan data terorganisasi yang dapat diakses dan dikelola secara sistematis.</dd></div>
+            <div><dt>Bit</dt><dd>Digit biner bernilai 0 atau 1; unit dasar informasi digital.</dd></div>
+            <div><dt>Byte</dt><dd>Kelompok delapan bit; satuan yang umum dipakai untuk ukuran berkas.</dd></div>
+            <div><dt>Browser</dt><dd>Aplikasi untuk mengambil dan menampilkan sumber daya web, bukan mesin pencari itu sendiri.</dd></div>
+            <div><dt>Cloud</dt><dd>Penyediaan sumber daya komputasi melalui jaringan, misalnya penyimpanan dan aplikasi daring.</dd></div>
+            <div><dt>CPU</dt><dd>Central Processing Unit; komponen yang menjalankan instruksi umum komputer.</dd></div>
+            <div><dt>Data</dt><dd>Representasi fakta, pengamatan, atau simbol yang dapat diolah menjadi informasi.</dd></div>
+            <div><dt>DNS</dt><dd>Domain Name System; sistem yang antara lain memetakan nama domain ke alamat IP.</dd></div>
+            <div><dt>Enkripsi</dt><dd>Pengubahan data menjadi bentuk yang memerlukan kunci sesuai untuk dibaca kembali.</dd></div>
+            <div><dt>Firewall</dt><dd>Sistem yang mengizinkan atau memblokir lalu lintas jaringan menurut aturan.</dd></div>
+            <div><dt>Hardware</dt><dd>Perangkat keras: komponen fisik seperti keyboard, prosesor, dan layar.</dd></div>
+            <div><dt>HTTPS</dt><dd>HTTP yang dilindungi TLS; mengamankan koneksi, bukan menjamin kebenaran isi situs.</dd></div>
+            <div><dt>Internet</dt><dd>Jaringan global yang menghubungkan berbagai jaringan komputer.</dd></div>
+            <div><dt>IP address</dt><dd>Alamat logis antarmuka jaringan yang dipakai untuk komunikasi berbasis Internet Protocol.</dd></div>
+            <div><dt>Jejak digital</dt><dd>Catatan yang ditinggalkan melalui aktivitas digital, secara sengaja maupun tidak.</dd></div>
+            <div><dt>Kecerdasan buatan (AI)</dt><dd>Sistem untuk tugas seperti pengenalan pola, prediksi, dan pembuatan konten; hasilnya perlu dievaluasi.</dd></div>
+            <div><dt>Malware</dt><dd>Perangkat lunak berbahaya yang dapat merusak, mencuri data, atau mengganggu sistem.</dd></div>
+            <div><dt>MFA</dt><dd>Autentikasi multifaktor; memeriksa identitas memakai lebih dari satu jenis faktor pembuktian.</dd></div>
+            <div><dt>Phishing</dt><dd>Penipuan dengan menyamar sebagai pihak tepercaya untuk memancing data atau tindakan tertentu.</dd></div>
+            <div><dt>RAM</dt><dd>Memori kerja untuk data aktif; umumnya kehilangan isi ketika daya dimatikan.</dd></div>
+            <div><dt>Software</dt><dd>Perangkat lunak: program dan instruksi yang mengarahkan kerja komputer.</dd></div>
+            <div><dt>URL</dt><dd>Uniform Resource Locator; alamat yang menyatakan lokasi dan cara mengakses sumber daya.</dd></div>
+          </dl>
+        </section>
+
+        <section class="tik-block tik-resources" id="rujukan" aria-labelledby="rujukan-title">
+          <div class="tik-section-heading"><p class="section-kicker"><span class="kicker-number">05</span><span>RASA INGIN TAHU TIDAK BERHENTI DI SINI</span></p><h2 id="rujukan-title">Buka jendela<br><em>yang lebih luas.</em></h2><p>Pilihan bacaan lanjutan dari penyedia materi dan dokumentasi. Sebagian besar berbahasa Inggris; tautan dibuka di tab baru.</p></div>
+          <div class="tik-resource-grid">
+            <a href="https://edu.gcfglobal.org/en/topics/computers/" target="_blank" rel="noopener noreferrer"><span class="tik-resource-type">KETERAMPILAN DASAR</span><h3>GCFGlobal</h3><p>Komputer, internet, dan aplikasi produktivitas untuk pemula.</p><span class="tik-resource-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener noreferrer"><span class="tik-resource-type">PENGEMBANGAN WEB</span><h3>MDN Web Docs</h3><p>Belajar HTML, CSS, JavaScript, dan aksesibilitas web.</p><span class="tik-resource-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener noreferrer"><span class="tik-resource-type">PEMROGRAMAN</span><h3>Python Tutorial</h3><p>Dokumentasi resmi tentang sintaks dan konsep bahasa Python.</p><span class="tik-resource-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer"><span class="tik-resource-type">KEAMANAN DIGITAL</span><h3>CISA · Secure Our World</h3><p>Kebiasaan dasar untuk melindungi akun dan perangkat.</p><span class="tik-resource-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://creativecommons.org/share-your-work/cclicenses/" target="_blank" rel="noopener noreferrer"><span class="tik-resource-type">HAK CIPTA &amp; LISENSI</span><h3>Creative Commons</h3><p>Penjelasan lisensi untuk berbagi dan menggunakan karya.</p><span class="tik-resource-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener noreferrer"><span class="tik-resource-type">ETIKA TEKNOLOGI</span><h3>UNESCO · Etika AI</h3><p>Prinsip tentang hak manusia, keadilan, dan tanggung jawab AI.</p><span class="tik-resource-arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="tik-closing"><span aria-hidden="true">✳</span><p>Teknologi terus berubah.<br><strong>Rasa ingin tahu dan sikap bijak tetap jadi bekal.</strong></p><a href="#atas" aria-label="Kembali ke bagian atas halaman TIK">Kembali ke atas ↑</a></div>
+        </section>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">

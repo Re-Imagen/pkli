@@ -142,7 +142,8 @@
   };
 
   taskInputs.forEach((input) => input.addEventListener('change', () => updateChecklist(true)));
-  updateChecklist();
+  // Jangan menimpa progres IPS dari halaman yang tidak memiliki checklist.
+  if (taskInputs.length) updateChecklist();
 
   function showMessage(message) {
     if (!toast) return;
