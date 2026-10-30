@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Halaman dalam: Tentang, Konten, dan placeholder TIK.
+   Halaman dalam: Tentang dan Konten. Gaya khusus TIK ada di tik.css.
    Gaya dasar (header, footer, tombol, tema) tetap diambil dari styles.css.
    ========================================================================== */
 
@@ -532,7 +532,6 @@
   text-transform: uppercase;
 }
 .subject-status .live-dot { width: 5px; height: 5px; box-shadow: 0 0 8px rgba(217, 251, 121, .65); }
-.subject-status.is-placeholder { color: var(--blue); border-color: rgba(155, 201, 202, .32); }
 
 .subject-art {
   position: relative;
@@ -643,207 +642,6 @@
 .content-footnote .text-link { flex: 0 0 auto; color: var(--ink); font-size: 10px; white-space: nowrap; }
 
 /* ==========================================================================
-   PLACEHOLDER TIK
-   ========================================================================== */
-
-.placeholder-page {
-  padding-top: clamp(34px, 5vw, 60px);
-  padding-bottom: clamp(58px, 8vw, 96px);
-}
-.placeholder-stage { display: flex; flex-direction: column; align-items: center; }
-.placeholder-card {
-  position: relative;
-  width: min(770px, 100%);
-  overflow: hidden;
-  padding: clamp(25px, 4.2vw, 46px);
-  text-align: center;
-  background:
-    radial-gradient(ellipse at 50% 0%, rgba(155, 201, 202, .11), transparent 52%),
-    var(--surface);
-  border: 1px solid var(--line-strong);
-  border-radius: 24px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, .26);
-}
-.placeholder-card::before {
-  position: absolute;
-  inset: 10px;
-  content: '';
-  border: 1px dashed var(--line);
-  border-radius: 17px;
-  pointer-events: none;
-}
-.placeholder-card::after {
-  position: absolute;
-  top: -170px;
-  left: 50%;
-  width: 460px;
-  height: 400px;
-  content: '';
-  background: radial-gradient(closest-side, rgba(217, 251, 121, .09), transparent 72%);
-  pointer-events: none;
-  transform: translateX(-50%);
-}
-.placeholder-top { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; text-align: left; }
-.placeholder-top .section-kicker { color: var(--muted); }
-.placeholder-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 6px 11px;
-  color: var(--blue);
-  background: rgba(155, 201, 202, .07);
-  border: 1px solid rgba(155, 201, 202, .32);
-  border-radius: 999px;
-  font-family: var(--font-mono);
-  font-size: 8px;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-}
-.placeholder-badge .live-dot { width: 5px; height: 5px; background: var(--blue); box-shadow: 0 0 9px rgba(155, 201, 202, .7); }
-
-.placeholder-visual {
-  position: relative;
-  height: 194px;
-  display: grid;
-  place-items: center;
-  margin: 12px 0 2px;
-}
-.ph-monitor {
-  position: relative;
-  z-index: 2;
-  width: 228px;
-  padding: 10px 10px 17px;
-  background: linear-gradient(155deg, #243236, #111a1c 72%);
-  border: 1px solid rgba(155, 201, 202, .28);
-  border-radius: 14px;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, .35), inset 0 1px 0 rgba(255, 255, 255, .09);
-  transform: rotate(-2deg);
-}
-.ph-bar { display: flex; gap: 4px; padding: 0 2px 9px; }
-.ph-bar i { width: 6px; height: 6px; background: var(--blue); border-radius: 50%; opacity: .45; }
-.ph-bar i:first-child { opacity: 1; }
-.ph-bar i:nth-child(2) { background: var(--lime); opacity: .7; }
-.ph-bar i:nth-child(3) { background: var(--about-orange, #ff8a3d); opacity: .8; }
-.ph-screen {
-  position: relative;
-  height: 96px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  color: #d9fb79;
-  background: #081012;
-  border: 1px solid rgba(217, 251, 121, .14);
-  border-radius: 7px;
-}
-.ph-screen::before {
-  position: absolute;
-  inset: 0;
-  content: '';
-  background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(217, 251, 121, .035) 3px 4px);
-}
-.ph-screen svg { width: 74px; height: 38px; opacity: .85; }
-.ph-cursor {
-  position: absolute;
-  right: 18px;
-  bottom: 13px;
-  width: 6px;
-  height: 10px;
-  background: #d9fb79;
-  animation: ph-blink 1.15s steps(1) infinite;
-}
-@keyframes ph-blink { 50% { opacity: 0; } }
-.ph-stand {
-  position: absolute;
-  bottom: -11px;
-  left: 50%;
-  width: 13px;
-  height: 11px;
-  background: #1b262a;
-  border-inline: 1px solid rgba(155, 201, 202, .18);
-  transform: translateX(-50%);
-}
-.ph-shadow {
-  position: absolute;
-  bottom: 21px;
-  left: 50%;
-  width: 220px;
-  height: 18px;
-  background: rgba(0, 0, 0, .32);
-  border-radius: 50%;
-  filter: blur(9px);
-  transform: translateX(-50%);
-}
-.ph-pixel { position: absolute; width: 11px; height: 11px; background: var(--blue); opacity: .8; }
-.ph-pixel-a { top: 26%; left: 14%; background: #ff802f; transform: rotate(13deg); }
-.ph-pixel-b { top: 18%; right: 17%; width: 8px; height: 8px; background: var(--lime); transform: rotate(-18deg); }
-.ph-pixel-c { right: 9%; bottom: 27%; width: 7px; height: 7px; background: var(--blue); transform: rotate(20deg); }
-.ph-pixel-d { bottom: 20%; left: 13%; width: 6px; height: 6px; background: var(--about-grey, #a3a3a3); }
-
-.placeholder-card h1 {
-  position: relative;
-  z-index: 2;
-  margin: 2px 0 0;
-  font-family: var(--font-display);
-  font-size: clamp(78px, 12vw, 132px);
-  font-weight: 500;
-  line-height: .92;
-  letter-spacing: -.075em;
-}
-.placeholder-cursor { color: var(--blue); font-weight: 400; animation: ph-blink 1.15s steps(1) infinite; }
-.placeholder-lede {
-  position: relative;
-  z-index: 2;
-  max-width: 465px;
-  margin: 17px auto 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.78;
-}
-.placeholder-lede b { color: var(--ink); font-weight: 600; }
-.placeholder-actions {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 26px;
-  margin-top: 27px;
-}
-.placeholder-actions .button { min-height: 48px; }
-.placeholder-status {
-  position: relative;
-  z-index: 2;
-  width: min(440px, 100%);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 33px auto 0;
-  padding-top: 17px;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-  font-size: 10px;
-  text-align: left;
-}
-.placeholder-status-label { color: var(--faint); font-family: var(--font-mono); font-size: 8px; letter-spacing: .12em; }
-.placeholder-progress { flex: 1; height: 5px; overflow: hidden; background: var(--surface-raised); border-radius: 999px; }
-.placeholder-progress i { display: block; width: 38%; height: 100%; background: linear-gradient(90deg, var(--blue), var(--lime)); border-radius: inherit; }
-.placeholder-meta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 23px;
-  color: var(--faint);
-  font-family: var(--font-mono);
-  font-size: 8px;
-  letter-spacing: .07em;
-  text-align: center;
-}
-.placeholder-meta > span:nth-child(2) { color: var(--about-orange); font-size: 15px; }
-.placeholder-meta code { padding: 2px 6px; color: var(--blue); background: var(--surface); border: 1px solid var(--line); border-radius: 5px; font-size: 8px; }
-
-/* ==========================================================================
    RESPONSIF
    ========================================================================== */
 
@@ -906,22 +704,6 @@
   .subject-desc { margin: 11px 0 17px; font-size: 11.5px; }
   .content-footnote { align-items: flex-start; flex-direction: column; gap: 9px; margin-bottom: 58px; padding: 16px 17px; }
   .content-footnote .text-link { margin-left: 38px; }
-
-  .placeholder-page { padding-top: 22px; padding-bottom: 60px; }
-  .placeholder-card { padding: 22px 17px 25px; border-radius: 19px; }
-  .placeholder-top { align-items: flex-start; flex-direction: column; gap: 10px; }
-  .placeholder-visual { height: 174px; margin-top: 10px; }
-  .ph-monitor { width: 196px; }
-  .ph-screen { height: 83px; }
-  .ph-pixel-a { left: 6%; }
-  .ph-pixel-b { right: 8%; }
-  .ph-pixel-c { right: 3%; }
-  .ph-pixel-d { left: 6%; }
-  .placeholder-card h1 { font-size: clamp(76px, 23vw, 104px); }
-  .placeholder-lede { margin-top: 15px; font-size: 12px; }
-  .placeholder-actions { align-items: center; flex-direction: column; gap: 17px; margin-top: 24px; }
-  .placeholder-status { margin-top: 27px; }
-  .placeholder-meta { align-items: center; flex-direction: column; gap: 7px; font-size: 7px; }
 }
 
 @media (max-width: 400px) {
@@ -934,8 +716,6 @@
   .social-sticker:nth-of-type(7) { --size: 52px; }
   .subject-card { min-height: 465px; }
   .subject-desc { font-size: 11px; }
-  .placeholder-actions .button { width: 100%; }
-  .placeholder-actions .text-link { font-size: 10px; }
 }
 
 /* Konten harus tetap terbaca walau observer reveal tidak sempat berjalan. */
